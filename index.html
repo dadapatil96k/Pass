@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>PMPML</title>
+    <link rel="icon" href="pmpml.png">
+    <style>
+        @media (max-width: 700px) {
+            body {
+                background-color: rgb(220, 220, 255);
+                margin: auto;
+                padding: 0%;
+            }
+
+            .main {
+                display: flex;
+                margin-top: 20px;
+            }
+
+            .all {
+                text-decoration: underline;
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0 0 0 75%;
+            }
+
+            .crossimg {
+                height: 15px;
+                margin: 0 0 0 -88%;
+            }
+
+            .contain {
+                height: 490px;
+                width: 90%;
+                margin: 105px 25px 30px 20px;
+                border-radius: 15px;
+                background-color: rgb(207, 46, 46);
+                display: flex;
+                position: relative;
+            }
+
+            .mainname {
+                height: 13px;
+            }
+
+            .marathi {
+                color: #fff;
+                font-size: 19px;
+                font-family: system-ui, sans-serif;
+                text-align: center;
+                margin-top: 8.5px;
+            }
+
+            .textcontain {
+                background-color: #fff;
+                height: 428px;
+                width: 99.6%;
+                margin-top: -14px; /* Adjusted margin to create a 4px gap */
+                position: relative;
+                overflow: hidden;
+            }
+
+            .pif {
+                display: flex;
+                margin: 5px 0 0 10px;
+            }
+
+            .passtype {
+                width: 59.3333%;
+                height: 60px;
+            }
+
+            .passt {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 11px;
+                color: gray;
+                margin-left: 8px;
+            }
+
+            .pmc {
+                position: absolute;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin: -10px 0 0 10px;
+                font-size: 22px;
+            }
+
+            .id {
+                width: 55.3333%;
+            }
+
+            .rs {
+                width: 33.3333%;
+            }
+
+           .hirizontal-line {
+                margin-top: 4px;
+                color: rgb(207, 207, 207);
+                width: 100%;
+                text-align: center;
+            }
+
+     
+            .booktime {
+                display: flex;
+                height: 50px;
+                margin-top: -15px;
+            }
+
+            .time,
+            .valid {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .ttt {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 12px;
+                color: gray;
+                margin-top: 20px;
+                margin-left: -60px;
+            }
+
+            .sss {
+               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+                margin-top: -6px;
+                font-size: 14.5px;
+            }
+
+            .number {
+               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-align: center;
+                margin-top: 30px;
+                color: rgb(117, 117, 117);
+                 font-size: 14.5px;
+            }
+
+            .logoo img {
+                height: 120px;
+                margin: 52px 0 0 110px;
+                animation: zoomInOut 2s ease-in-out infinite;
+            }
+
+            @keyframes zoomInOut {
+                0%,
+                100% {
+                    transform: scale(0.8);
+                }
+
+                50% {
+                    transform: scale(1.5);
+                }
+            }
+
+            .onedayname {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                
+                padding: 5px 10px;
+                color: #fff;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16.5px;
+                margin-top: 4px;
+            }
+
+            .cus {
+                height: 55px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 100px;
+                width: 55px;
+                margin: 90px 0 0 82.5%;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+
+            .cus img {
+                height: 20px;
+                position: relative;
+                justify-items: center;
+                align-items: center;
+                margin: 17px 0 0 17px;
+            }
+            .left-half-line-circle {
+                width: 12.7px;
+                height: 28px;
+                border: 1.5px solid rgb(207, 207, 207); /* Circle ki line color aur width */
+                border-right: none; /* Right side ki line ko hatana */
+                border-top-left-radius: 100px;
+                border-bottom-left-radius: 100px;
+                background-color: transparent;
+                margin: -24px 0 0 341px;
+            }
+            .right-half-line-circle {
+                width: 12px;
+                height: 27px;
+                border: 1.5px solid rgb(207, 207, 207); /* Circle ki line color aur width */
+                border-left: none; /* Right side ki line ko hatana */
+                border-top-right-radius: 100px;
+                border-bottom-right-radius: 100px;
+                background-color: transparent;
+                margin: -30px 0 0 0;
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h6 class="all">All passes</h6>
+        <img class="crossimg" src="https://www.pngkey.com/png/full/215-2155436_png-file-svg-cross-mark-png-black.png" alt="image">
+    </div>
+    <div class="contain">
+        <div class="mainname">
+            <p class="marathi">पुणे महानगर परिवहन महामंडळ लि.</p>
+            <div class="textcontain">
+                <div class="pif">
+                    <div class="passtype">
+                        <p class="passt">Pass Type</p>
+                        <b class="pmc"><strong>Only PMC</strong></b>
+                    </div>
+                    <div class="id">
+                        <p class="passt">ID</p>
+                        <b class="pmc"><strong><b>1923</b></strong></b>
+                    </div>
+                    <div class="rs">
+                        <p class="passt">Fare</p>
+                        <b class="pmc"><strong>₹40</strong></b>
+                    </div>
+                </div>
+                <div class="hirizontal-line">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - </div> 
+                <div class="left-half-line-circle"></div>
+                 <div class="right-half-line-circle"></div>
+                <div class="booktime">
+                    <div class="time">
+                        <p class="ttt">Booking Time</p>
+                        <b class="sss"><strong>17 Jan, 25 | 07:01 AM</strong></b>
+                    </div>
+                    <div class="valid">
+                        <p class="ttt">Validity Time</p>
+                        <b class="sss"><strong>17 Jan, 25 | 11:59 PM</strong></b>
+                    </div>
+                </div>
+                <div class="number">2410010612MIT8HS</div>
+                <div class="hirizontal-line">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - -              </div>
+                <div class="logoo">
+                    <img src="https://play-lh.googleusercontent.com/lFSZVZeLbHkZN9Iz7kGqJ0aVEEy_AaZYPAX9lyomfZvNCARgoihUKm4oV6z4mlAl_hTV" alt="image">
+                </div>
+            </div>
+        </div>
+        <div class="onedayname"><strong>One Day Pass</strong> </div>
+    </div>
+    <div class="cus">
+        <img src="https://e7.pngegg.com/pngimages/654/738/png-clipart-computer-icons-name-icon-black-desktop-wallpaper.png">
+    </div>
+</body>
+
+</html>
